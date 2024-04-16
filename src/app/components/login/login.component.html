@@ -3,12 +3,12 @@
   class="d-flex justify-content-center align-items-center"
   style="height: 100vh;"
 >
-  <form [formGroup]="formLogin" style="width: 40%;">
+  <form [formGroup]="formLogin" class="card-rersponsive">
     <fieldset class="border p-4 p-4" style="border-color: rgb(157, 153, 153)">
       <legend class="float-none w-auto">LOGIN</legend>
 
       <div class="row">
-        <div class="col">
+        <div class="col-md">
             <div class="mb-3">
                 <label for="userInput" class="form-label">Usuario</label>
                 <input
@@ -34,19 +34,19 @@
               </div>
               
         </div>
-        <div class="col d-flex justify-content-center align-items-center">
+        <div class="col-md d-flex justify-content-sm-center align-items-sm-center">
             <div class="mb-3">
                 <button class="btn btn-primary px-5" (click)="login()">Ingresar</button>
             </div>
         </div>
-      </div>
-      <div
-        *ngIf="messageErrorLogin.length > 0"
-        class="alert alert-danger"
-        role="alert"
-        >
-        {{ messageErrorLogin }}
-    </div>
+        </div>
+        <div
+          *ngIf="messageErrorLogin.length > 0"
+          class="alert alert-danger"
+          role="alert"
+          >
+          {{ messageErrorLogin }}
+       </div>
       
     </fieldset>
   </form>

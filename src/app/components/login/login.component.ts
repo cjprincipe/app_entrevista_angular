@@ -21,8 +21,8 @@ export class LoginComponent {
 
   initFormLogin(): void {
     this.formLogin = new FormGroup({
-      user: new FormControl(''),
-      pwd: new FormControl('')
+      user: new FormControl('test01'),
+      pwd: new FormControl('test01')
     });
   }
 

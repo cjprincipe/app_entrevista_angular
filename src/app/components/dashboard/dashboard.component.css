@@ -4,3 +4,28 @@
     line-height: 1.5;
     border-radius: 0.2rem;
   }
+
+/* Estilo base */
+.card-rersponsive {
+  width: 100%; /* Ancho del 100% por defecto */
+  padding: 2rem;
+}
+
+.bg {
+  background-color: aquamarine;
+}
+
+.bg1 {
+  background-color: red;
+}
+
+/* Media query para pantallas grandes (768px o más) */
+@media (min-width: 768px) {
+  .card-rersponsive {
+    width: 60%; /* Ancho del 50% en pantallas grandes */
+  }
+  .align-end {
+    text-align: end
+  }
+}
+

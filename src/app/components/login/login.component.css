@@ -1,0 +1,11 @@
+/* Estilo base */
+.card-rersponsive {
+    width: 90%; /* Ancho del 100% por defecto */
+  }
+  
+  /* Media query para pantallas grandes (768px o más) */
+  @media (min-width: 768px) {
+    .card-rersponsive {
+      width: 50%; /* Ancho del 50% en pantallas grandes */
+    }
+}
