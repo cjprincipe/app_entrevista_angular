@@ -2,11 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
 import { Store, select } from '@ngrx/store';
-import { Observable } from 'rxjs';
 import { Task } from 'src/app/models/task.interface';
 import { User } from 'src/app/models/user.model';
-import { loginCreateAction } from 'src/app/utils/ngrx-store-login/user.actions';
-import { UserState } from 'src/app/utils/ngrx-store-login/user.reducer';
 
 
 @Component({
@@ -97,7 +94,9 @@ export class DashboardComponent implements OnInit {
     const pattern = /^[a-zA-Z0-9\s]+$/; ///^[a-zA-Z0-9]+$/;
     const inputChar = String.fromCharCode(event.charCode);
     if (!pattern.test(inputChar)) {
+      console.log(1)
       event.preventDefault();
     }
+    console.log(2)
   }
 }
